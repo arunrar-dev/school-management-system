@@ -1,0 +1,150 @@
+residential-school-erp/
+│── public/
+│   ├── index.php
+│   ├── .htaccess
+│   └── assets/
+│       ├── css/
+│       ├── js/
+│       └── images/
+│
+│── src/
+│   ├── App.php
+│   ├── Kernel.php
+│   │
+│   ├── Core/
+│   │   ├── Config/
+│   │   │   └── Config.php
+│   │   │
+│   │   ├── Env/
+│   │   │   └── Env.php
+│   │   │
+│   │   ├── Http/
+│   │   │   ├── Request.php
+│   │   │   ├── Response.php
+│   │   │   ├── Router.php
+│   │   │   ├── Route.php
+│   │   │   └── Middleware/
+│   │   │       ├── MiddlewareInterface.php
+│   │   │       ├── AuthMiddleware.php
+│   │   │       ├── CsrfMiddleware.php
+│   │   │       └── RoleMiddleware.php
+│   │   │
+│   │   ├── Security/
+│   │   │   ├── Csrf.php
+│   │   │   └── Password.php
+│   │   │
+│   │   ├── Session/
+│   │   │   └── Session.php
+│   │   │
+│   │   ├── Database/
+│   │   │   ├── Database.php
+│   │   │   ├── QueryBuilder.php
+│   │   │   └── MigrationRunner.php
+│   │   │
+│   │   ├── View/
+│   │   │   └── View.php
+│   │   │
+│   │   ├── Validation/
+│   │   │   ├── Validator.php
+│   │   │   └── Rules.php
+│   │   │
+│   │   ├── Helpers/
+│   │   │   ├── Str.php
+│   │   │   └── Arr.php
+│   │   │
+│   │   ├── Exceptions/
+│   │   │   ├── HttpException.php
+│   │   │   ├── NotFoundException.php
+│   │   │   └── ValidationException.php
+│   │   │
+│   │   └── Support/
+│   │       └── Debug.php
+│   │
+│   ├── Controllers/
+│   │   ├── Controller.php
+│   │   ├── HomeController.php
+│   │   └── Auth/
+│   │       ├── LoginController.php
+│   │       └── LogoutController.php
+│   │
+│   ├── Models/
+│   │   ├── Model.php
+│   │   ├── User.php
+│   │   ├── Student.php
+│   │   └── Staff.php
+│   │
+│   ├── Repositories/
+│   │   ├── UserRepository.php
+│   │   └── StudentRepository.php
+│   │
+│   ├── Services/
+│   │   ├── AuthService.php
+│   │   └── StudentService.php
+│   │
+│   └── Middleware/
+│       └── GlobalMiddleware.php
+│
+│── routes/
+│   ├── web.php
+│   ├── api.php
+│   └── modules/
+│       ├── auth.php
+│       ├── students.php
+│       ├── staff.php
+│       ├── hostel.php
+│       ├── fees.php
+│       └── exams.php
+│
+│── config/
+│   ├── app.php
+│   ├── database.php
+│   ├── auth.php
+│   └── school.php
+│
+│── resources/
+│   ├── views/
+│   │   ├── layouts/
+│   │   │   ├── base.php
+│   │   │   └── admin.php
+│   │   │
+│   │   ├── home.php
+│   │   ├── auth/
+│   │   │   └── login.php
+│   │   └── errors/
+│   │       ├── 404.php
+│   │       └── 500.php
+│   │
+│   └── lang/
+│       └── en.php
+│
+│── storage/
+│   ├── logs/
+│   │   └── app.log
+│   ├── cache/
+│   ├── uploads/
+│   └── sessions/
+│
+│── database/
+│   ├── migrations/
+│   │   ├── 2026_01_01_000001_create_users_table.php
+│   │   ├── 2026_01_01_000002_create_roles_table.php
+│   │   └── ...
+│   └── seeds/
+│       └── DatabaseSeeder.php
+│
+│── bin/
+│   ├── migrate.php
+│   ├── seed.php
+│   ├── make-migration.php
+│   └── make-controller.php
+│
+│── tests/
+│   ├── Unit/
+│   └── Feature/
+│
+│── .env
+│── .env.example
+│── composer.json
+│── composer.lock
+│── README.md
+│── .gitignore
